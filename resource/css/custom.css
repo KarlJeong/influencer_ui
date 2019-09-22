@@ -1,0 +1,46 @@
+/*
+ * Version: 2.1
+ * File Description: Place here your custom CSS styles
+ */
+.singup-full {
+  height:100%
+}
+
+.social-links.animated-effect-1 li.youtube a:hover {
+ border-color: #b31217;
+}
+
+.social-links:not(.animated-effect-1) li.youtube a:hover,
+.colored.social-links li.youtube a,
+.social-links.animated-effect-1 li.youtube a:after,
+.btn.youtube {
+ background-color: #b31217;
+ border-color: #b31217;
+ color: #ffffff;
+}
+
+/* Tags cloud block overwrite
+---------------------------------- */
+.tag a {
+  background-color: white;
+  border: 1px solid gray;
+  color: gray;
+  font-size: 15px;
+}
+
+.tag a.active {
+  background-color: #09afdf;
+  border: 1px solid #0c9ec7;
+  color: white;
+}
+
+.tag a:hover {
+  color: #09afdf;
+  border-color: #0c9ec7;
+}
+
+.tag a.active:hover {
+  color: #09afdf;
+  border-color: #0c9ec7;
+  color: gray;
+}
