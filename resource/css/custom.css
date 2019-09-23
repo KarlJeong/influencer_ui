@@ -26,6 +26,8 @@
   border: 1px solid gray;
   color: gray;
   font-size: 15px;
+  padding: 3px 20px;
+
 }
 
 .tag a.active {
@@ -43,4 +45,92 @@
   color: #09afdf;
   border-color: #0c9ec7;
   color: gray;
+}
+
+/*Listing Items
+---------------------------------- */
+.listing-item .overlay-container .badge-ready {
+  border: 1px solid #09df69;
+  color: #09df69;
+}
+.listing-item .overlay-container .badge-working {
+  border: 1px solid #df3b09;
+  color: #df3b09;
+}
+.listing-item .overlay-container .badge-gathering {
+  border: 1px solid #099adf;
+  color: #099adf;
+}
+.listing-item .overlay-container .badge-end {
+  border: 1px solid #505050;
+  color: #505050;
+}
+
+/*Padding
+---------------------------------- */
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+/*파일 업로드
+---------------------------------- */
+.fileMainPicBtn label {
+	display: inline-block;
+	padding: .5em .75em;
+	color: #ffffff;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #09afdf;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+}
+
+.fileAddPicBtn label {
+	display: inline-block;
+	color: #ffffff;
+	font-size: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #09afdf;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+}
+
+.fileMainPicBtn input[type="file"]{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+
+.fileAddPicBtn input[type="file"]{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
 }
