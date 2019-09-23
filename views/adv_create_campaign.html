@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="../resource/images/favicon.ico">
+	<link rel="shortcut icon" href="../resource/../resource/images/favicon.ico">
 
 	<!-- Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -46,9 +46,16 @@
 	<!-- Custom css -->
 	<link href="../resource/css/custom.css" rel="stylesheet">
 
+	<!-- Datepicker css -->
+	<link href="../resource/datepicker/css/datepicker3.css" rel="stylesheet" />
+
 </head>
 
 <body class=" ">
+	<!-- Jquery and Bootstap core js files -->
+	<script src="../resource/plugins/jquery.min.js"></script>
+	<script src="../resource/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 	<div class="scrollToTop circle"><i class="fa fa-angle-up"></i></div>
 
 	<div class="page-wrapper">
@@ -59,7 +66,7 @@
 						<div class="col-md-auto hidden-md-down">
 							<div class="header-first clearfix">
 								<div id="logo" class="logo">
-									<a href="index.html"><img id="logo_img" src="../resource/images/logo_light_blue.png" alt="The Project"></a>
+									<a href="index.html"><img id="logo_img" src="../resource/../resource/images/logo_light_blue.png" alt="The Project"></a>
 								</div>
 
 								<div class="site-slogan">
@@ -74,7 +81,7 @@
 									<nav class="navbar navbar-expand-lg navbar-light p-0">
 										<div class="navbar-brand clearfix hidden-lg-up">
 											<div id="logo-mobile" class="logo">
-												<a href="index.html"><img id="logo-img-mobile" src="../resource/images/logo_light_blue.png" alt="The Project"></a>
+												<a href="index.html"><img id="logo-img-mobile" src="../resource/../resource/images/logo_light_blue.png" alt="The Project"></a>
 											</div>
 
 											<div class="site-slogan">
@@ -152,254 +159,384 @@
 			</header>
 		</div>
 
-		<div class="banner clearfix">
-			<div class="slideshow">
-				<div class="slider-revolution-5-container">
-					<div id="slider-banner-fullwidth-big-height" class="slider-banner-fullwidth-big-height rev_slider" data-version="5.0">
-						<ul class="slides">
-							<!-- slide 1 start -->
-							<!-- ================ -->
-							<li class="text-center" data-transition="random" data-slotamount="default" data-masterspeed="default" data-title="Adv Main Slide First">
-
-								<!-- main image -->
-								<img src="../resource/images/slider-fullwidth-slide-1.jpg" alt="slidebg1" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" class="rev-slidebg">
-
-								<!-- Transparent Background -->
-								<div class="tp-caption dark-translucent-bg" data-x="center" data-y="center" data-start="0" data-transform_idle="o:1;" data-transform_in="o:0;s:600;e:Power2.easeInOut;" data-transform_out="o:0;s:600;" data-width="5000"
-									data-height="5000">
-								</div>
-
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption large_white" data-x="center" data-y="150" data-start="1000" data-width="650" data-transform_idle="o:1;" data-transform_in="y:[100%];sX:1;sY:1;o:0;s:1150;e:Power4.easeInOut;"
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-									<span>저렴한 비용으로</span> <br>내게 가장 알맞은 광고를 찾으세요!
-								</div>
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption large_white tp-resizeme hidden-xs" data-x="center" data-y="250" data-start="1300" data-width="500" data-transform_idle="o:1;" data-transform_in="o:0;s:2000;e:Power4.easeInOut;">
-									<div class="separator light"></div>
-								</div>
-
-								<!-- LAYER NR. 3 -->
-								<div class="tp-caption medium_white hidden-xs" data-x="center" data-y="290" data-start="1300" data-width="750" data-transform_idle="o:1;" data-transform_in="y:[100%];sX:1;sY:1;s:800;e:Power4.easeInOut;"
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-									The Project에서는 <strong>305명의 인플루언서</strong>와 <br>
-									<strong>604,204명의 구독자</strong>, 그리고 <strong>그 이상의 잠재고객</strong>을 만날 수 있습니다.
-								</div>
-
-							</li>
-							<!-- slide 1 end -->
-
-							<!-- slide 2 start -->
-							<!-- ================ -->
-							<li class="text-center" data-transition="random" data-slotamount="default" data-masterspeed="default" data-title="Adv Main Slide Second">
-
-								<!-- main image -->
-								<img src="../resource/images/slider-fullwidth-slide-2.jpg" alt="slidebg2" data-bgposition="center top" data-bgrepeat="no-repeat" data-bgfit="cover" class="rev-slidebg">
-
-								<!-- Transparent Background -->
-								<div class="tp-caption dark-translucent-bg" data-x="center" data-y="center" data-start="0" data-transform_idle="o:1;" data-transform_in="o:0;s:600;e:Power2.easeInOut;" data-transform_out="o:0;s:600;" data-width="5000"
-									data-height="5000">
-								</div>
-
-								<!-- LAYER NR. 1 -->
-								<div class="tp-caption large_white" data-x="center" data-y="150" data-start="1000" data-width="650" data-transform_idle="o:1;" data-transform_in="y:[100%];sX:1;sY:1;o:0;s:1150;e:Power4.easeInOut;"
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-									<span>내 제품과 가장 알맞은 컨셉을 가진</span> <br>인플루언서를 지금 확인해보세요!
-								</div>
-
-								<!-- LAYER NR. 2 -->
-								<div class="tp-caption large_white tp-resizeme hidden-xs" data-x="center" data-y="250" data-start="1300" data-width="500" data-transform_idle="o:1;" data-transform_in="o:0;s:2000;e:Power4.easeInOut;">
-									<div class="separator light"></div>
-								</div>
-
-								<!-- LAYER NR. 3 -->
-								<div class="tp-caption medium_white hidden-xs" data-x="center" data-y="290" data-start="1300" data-width="750" data-transform_idle="o:1;" data-transform_in="y:[100%];sX:1;sY:1;s:800;e:Power4.easeInOut;"
-									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
-									The Project에서는 <strong> 22개의 다양한 컨셉</strong>과 <strong>12개의 카테고리</strong>를 기반으로<br>
-									내 제품을 가장 홍보할 수 있는 인플루언서를 만날 수 있습니다!
-								</div>
-
-							</li>
-							<!-- slide 2 end -->
-						</ul>
-						<div class="tp-bannertimer"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div id="page-start"></div>
-
-		<section class="pv-30 clearfix">
-			<div class="container">
-				<div class="row justify-content-lg-center">
-					<div class="col-lg-10">
-						<h2 class="text-center"><strong>The Project</strong>와 함께하는<br> 대표 인플루언서들을 만나보세요!</h2>
-						<div class="separator"></div>
-					</div>
-				</div>
-			</div>
-			<div class="slick-carousel content-slider">
-				<div>
-					<div class="container">
-						<div class="row justify-content-md-center">
-							<div class="col-md-8">
-								<div class="testimonial text-center">
-									<div class="testimonial-image">
-										<img src="../resource/images/testimonial-1.jpg" alt="Jane Doe" title="Jane Doe" class="rounded-circle">
-									</div>
-									<h3 class="mt-3">Boram Tube Vlog [보람튜브 브이로그]</h3>
-									<div class="separator"></div>
-									<div class="testimonial-body">
-										<blockquote>
-											<p>안녕하세요~ 친구들 ^^ Boram Tube Vlog [보람튜브 브이로그] 채널에서는 보람이의 일상 이야기와 재미있는 장난감 놀이 영상이 업로드 됩니다! 엉뚱발랄 귀여운 보람이와 매일매일 재밌는 추억 만들어요 ~^0^
-											</p>
-										</blockquote>
-										<div class="testimonial-info-1">
-											<p class="medium mb-10">
-												<i class="fa fa-tag pr-1"></i> VLOG, 리뷰, 소통, 친근, 한국어, 영어
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="container">
-						<div class="row justify-content-md-center">
-							<div class="col-md-8">
-								<div class="testimonial text-center">
-									<div class="testimonial-image">
-										<img src="../resource/images/testimonial-2.jpg" alt="Jane Doe" title="Jane Doe" class="rounded-circle">
-									</div>
-									<h3 class="mt-3">알고리즘 투게더 with 거니</h3>
-									<div class="separator"></div>
-									<div class="testimonial-body">
-										<blockquote>
-											<p>거니 의 알고투게더 채널은 컴퓨터 전공자뿐만 아니라 일반인들도 시청하기 좋은 컴퓨터에 관련된 유익한 영상을 업로드 합니다. 감사합니다.
-											</p>
-										</blockquote>
-										<div class="testimonial-info-1">
-											<p class="medium mb-10">
-												<i class="fa fa-tag pr-1"></i> IT, 교육, 소통, 유머, 한국어
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 
 		<section class="pv-30 clearfix">
 			<div class="container">
 				<div class="row justify-content-lg-start pv-30">
 					<div class="col-lg-10">
-						<h2 class="text-left"><strong>내 캠페인 목록</strong></h2>
+						<h2 class="text-left"><strong>캠페인 만들기</strong></h2>
 						<div class="separator-2"></div>
 					</div>
 				</div>
-				<div class="image-box style-3-b">
-					<div class="row">
-						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
-							<div class="overlay-container">
-								<img src="../resource/images/portfolio-1.jpg" alt="">
-								<span class="badge badge-ready">캠페인 준비중</span>
+				<div class="process">
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active show" href="#productInfo" role="tab" data-toggle="tab" title="제품 정보입력" aria-selected="false">1단계</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#campaignInfo" role="tab" data-toggle="tab" title="캠페인 정보입력" aria-selected="true">2단계</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#influencerInfo" role="tab" data-toggle="tab" title="지원 정보입력">3단계</a>
+						</li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content clear-style">
+						<div class="tab-pane active show" id="productInfo">
+							<h3 class="mt-4 pt-4">1단계 - 제품 정보입력</h3>
+							<div class="separator-2"></div>
+							<div class="row">
+								<aside class="pt-30 col-lg-5 col-xl-4 order-lg-1">
+									<div class="sidebar">
+										<div class="block clearfix">
+											<div class="form-group">
+												<label for="inputMainPic" class="col-form-label">제품 메인사진</label>
+												<div class="overlay-container ">
+													<img src="../resource/../resource/images/portfolio-6.jpg" alt="">
+													<div class="overlay-to-top">
+														<div class="fileMainPicBtn">
+															<label for="myFileUp"><i class="fa fa-plus"></i> 사진 변경</label>
+															<input type="file" id="myFileUp">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="inputAddPic" class="col-form-label">제품 추가사진</label>
+												<div class="row grid-space-20">
+													<div class="col-4">
+														<div class="overlay-container">
+															<img src="../resource/images/portfolio-1.jpg" alt="">
+															<div class="fileAddPicBtn overlay-link">
+																<label for="myFileUp"><i class="fa fa-plus"></i></label>
+																<input type="file" id="myFileUp">
+															</div>
+														</div>
+													</div>
+													<div class="col-4">
+														<div class="overlay-container overlay-visible">
+															<img src="../resource/images/portfolio-3.jpg" alt="">
+															<div class="fileAddPicBtn overlay-link">
+																<label for="myFileUp"><i class="fa fa-plus"></i></label>
+																<input type="file" id="myFileUp">
+															</div>
+														</div>
+													</div>
+													<div class="col-4">
+														<div class="overlay-container">
+															<img src="../resource/images/portfolio-4.jpg" alt="">
+															<div class="fileAddPicBtn overlay-link">
+																<label for="myFileUp"><i class="fa fa-plus"></i></label>
+																<input type="file" id="myFileUp">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</aside>
+								<div class="col-lg-7 order-lg-2 ml-xl-auto">
+									<form>
+										<div class="form-group">
+											<label for="inputProduct" class="col-sm-3 col-form-label">제품 명</label>
+											<div class="col-sm-12">
+												<select class="form-control" id="inputProduct">
+													<option>FC660C 한글 블랙갈축</option>
+													<option>VARMILO VA87M 매화 컬렉션 적축</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputBrand" class="col-sm-3 col-form-label">브랜드 명</label>
+											<div class="col-sm-12">
+												<input type="text" class="form-control" id="inputBrand" value="레오폴드" disabled>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputCategory" class="col-sm-3 col-form-label">제품 카테고리</label>
+											<div class="col-sm-12">
+												<input type="text" class="form-control" id="inputCategory" value="IT" disabled>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="intpuShopUrl" class="col-sm-3 col-form-label">제품 상세페이지</label>
+											<div class="col-sm-12">
+												<input type="text" class="form-control" id="intpuShopUrl" value="http://cafe24.com/fiveseconds/F12I5S" disabled>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputExpireProduct" class="col-sm-3 col-form-label">제품 판매 종료일</label>
+											<div class="col-sm-12">
+												<input type="text" class="form-control" id="inputExpireProduct" value="2019-12-30" disabled>
+											</div>
+										</div>
+										<div class="text-right pt-3 pr-3">
+											<a href="#" class="btn btn-gray btn-animated margin-clear">취소 <i class="fa fa-remove"></i></a>
+											<a href="#" class="btn btn-success btn-animated margin-clear">다음(1/2) <i class="fa fa-arrow-right"></i></a>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-						<div class="col-md-6 col-lg-8 col-xl-9">
-							<div class="body">
-								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
-								<p class="small mb-10">
-									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
-									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
-								</p>
-								<p class="small mb-10">
-									<i class="fa fa-krw pr-1"></i> 300,000
-									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
-								</p>
-								<div class="separator-2"></div>
-								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
+						<div class="tab-pane" id="campaignInfo">
+							<h3 class="mt-4 pt-4">2단계 - 캠페인 정보입력</h3>
+							<div class="separator-2"></div>
+							<div class="row">
+								<div class="col-lg-7">
+									<form>
+										<div class="form-group">
+											<label for="inputProduct" class="col-sm-3 col-form-label">캠페인 제목</label>
+											<div class="col-sm-12">
+												<input type="text" class="form-control" id="inputBrand" placeholder="ex) 기계식 갈축 키보드를 홍보해주실 유튜버를 찾습니다.">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputBrand" class="col-sm-3 col-form-label">캠페인 주관</label>
+											<div class="col-sm-12">
+												<input type="text" class="form-control" id="inputBrand" placeholder="ex) 5SECONDS.">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputChannelType" class="col-sm-3 col-form-label">캠페인 유형</label>
+											<div class="col-sm-12">
+												<div class="tags-cloud">
+													<div class="tag">
+														<a href="#">리뷰</a>
+													</div>
+													<div class="tag">
+														<a href="#" class="active">PPL</a>
+													</div>
+													<div class="tag">
+														<a href="#">무관</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="intpuShopUrl" class="col-sm-3 col-form-label">캠페인 목표</label>
+											<div class="col-sm-12">
+												<textarea class="form-control" id="intpuShopUrl" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputExpireProduct" class="col-sm-3 col-form-label">캠페인 예산(KRW)</label>
+											<div class="col-sm-12">
+												<input type="number" class="form-control" id="inputExpireProduct" min="0" step="1000">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputExpireProduct" class="col-sm-6 col-form-label">캠페인 진행 채널 수(KRW)</label>
+											<div class="col-sm-12">
+												<input type="number" class="form-control" id="inputExpireProduct" min="0" step="1">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="lastName" class="col-sm-3 col-form-label">캠페인 공고 일정</label>
+											<div class="col-sm-12 row">
+												<div class="col-sm-5 input-group date" id="noticeBeginDatePicker">
+													<input type="text" class="form-control" id="noticeBeginDate" name="noticeBeginDate" onkeydown="return false" />
+													<div class="input-group-addon">
+														<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+													</div>
+												</div>
+												<script type="text/javascript">
+													$(function() {
+														$("#noticeBeginDatePicker").datepicker({
+															calendarWeeks: false,
+															todayHighlight: true,
+															autoclose: true,
+															disableTouchKeyboard: true,
+															format: "yyyy-mm-dd"
+														});
+													});
+												</script>
+												<div class="text-center col-sm-2">
+													<h4 align="center"><b>~</b></h4>
+												</div>
+												<div class="col-sm-5 input-group date" id="noticeEndDatePicker">
+													<input type="text" class="form-control" id="noticeEndDate" name="noticeEndDate" onkeydown="return false" />
+													<div class="input-group-addon">
+														<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+													</div>
+												</div>
+												<script type="text/javascript">
+													$(function() {
+														$("#noticeEndDatePicker").datepicker({
+															calendarWeeks: false,
+															todayHighlight: true,
+															autoclose: true,
+															disableTouchKeyboard: true,
+															format: "yyyy-mm-dd"
+														});
+													});
+												</script>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="lastName" class="col-sm-3 col-form-label">캠페인 진행 일정</label>
+											<div class="col-sm-12 row">
+												<div class="col-sm-5 input-group date" id="campaignBeginDatePicker">
+													<input type="text" class="form-control" id="campaignBeginDate" name="campaignBeginDate" onkeydown="return false" />
+													<div class="input-group-addon">
+														<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+													</div>
+												</div>
+												<script type="text/javascript">
+													$(function() {
+														$("#campaignBeginDatePicker").datepicker({
+															calendarWeeks: false,
+															todayHighlight: true,
+															autoclose: true,
+															disableTouchKeyboard: true,
+															format: "yyyy-mm-dd"
+														});
+													});
+												</script>
+												<div class="text-center col-sm-2">
+													<h4 align="center"><b>~</b></h4>
+												</div>
+												<div class="col-sm-5 input-group date" id="campaignEndDatePicker">
+													<input type="text" class="form-control" id="campaignEndDate" name="campaignEndDate" onkeydown="return false" />
+													<div class="input-group-addon">
+														<span class="input-group-text"><i class="fa fa-calendar"></i></span>
+													</div>
+												</div>
+												<script type="text/javascript">
+													$(function() {
+														$("#campaignEndDatePicker").datepicker({
+															calendarWeeks: false,
+															todayHighlight: true,
+															autoclose: true,
+															disableTouchKeyboard: true,
+															format: "yyyy-mm-dd"
+														});
+													});
+												</script>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="intpuShopUrl" class="col-sm-3 col-form-label">캠페인 목표</label>
+											<div class="col-sm-12">
+												<textarea class="form-control" id="intpuShopUrl" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="text-right pt-3 pr-3">
+											<a href="#" class="btn btn-gray btn-animated margin-clear">취소 <i class="fa fa-remove"></i></a>
+											<a href="#" class="btn btn-success btn-animated margin-clear">다음(2/3) <i class="fa fa-arrow-right"></i></a>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="image-box style-3-b">
-					<div class="row">
-						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
-							<div class="overlay-container">
-								<img src="../resource/images/portfolio-2.jpg" alt="">
-								<span class="badge badge-working">캠페인 진행중</span>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-8 col-xl-9">
-							<div class="body">
-								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
-								<p class="small mb-10">
-									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
-									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
-								</p>
-								<p class="small mb-10">
-									<i class="fa fa-krw pr-1"></i> 300,000
-									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
-								</p>
-								<div class="separator-2"></div>
-								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="image-box style-3-b">
-					<div class="row">
-						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
-							<div class="overlay-container">
-								<img src="../resource/images/portfolio-3.jpg" alt="">
-								<span class="badge badge-gathering">모집중</span>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-8 col-xl-9">
-							<div class="body">
-								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
-								<p class="small mb-10">
-									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
-									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
-								</p>
-								<p class="small mb-10">
-									<i class="fa fa-krw pr-1"></i> 300,000
-									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
-								</p>
-								<div class="separator-2"></div>
-								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="image-box style-3-b">
-					<div class="row">
-						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
-							<div class="overlay-container">
-								<img src="../resource/images/portfolio-3.jpg" alt="">
-								<span class="badge badge-end">종료</span>
-							</div>
-						</div>
-						<div class="col-md-6 col-lg-8 col-xl-9">
-							<div class="body">
-								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
-								<p class="small mb-10">
-									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
-									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
-								</p>
-								<p class="small mb-10">
-									<i class="fa fa-krw pr-1"></i> 300,000
-									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
-								</p>
-								<div class="separator-2"></div>
-								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
+						<div class="tab-pane" id="influencerInfo">
+							<h3 class="mt-4 pt-4">3단계 - 지원 정보입력</h3>
+							<div class="separator-2"></div>
+							<div class="row">
+								<div class="col-lg-7">
+									<form>
+										<div class="form-group">
+											<label for="inputChannelType" class="col-sm-6 col-form-label">인플루언서 구독자수 제한</label>
+											<div class="col-sm-12">
+												<div class="tags-cloud">
+													<div class="tag">
+														<a href="#">없음</a>
+													</div>
+													<div class="tag">
+														<a href="#" class="active">1만 이상</a>
+													</div>
+													<div class="tag">
+														<a href="#">5만 이상</a>
+													</div>
+													<div class="tag">
+														<a href="#">10만 이상</a>
+													</div>
+													<div class="tag">
+														<a href="#">100만 이상</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputChannelType" class="col-sm-6 col-form-label">인플루언서 선호 연령</label>
+											<div class="col-sm-12">
+												<div class="tags-cloud">
+													<div class="tag">
+														<a href="#">무관</a>
+													</div>
+													<div class="tag">
+														<a href="#" class="active">10대</a>
+													</div>
+													<div class="tag">
+														<a href="#">20대</a>
+													</div>
+													<div class="tag">
+														<a href="#">30대</a>
+													</div>
+													<div class="tag">
+														<a href="#">40대 이상</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputChannelType" class="col-sm-6 col-form-label">인플루언서 선호 성별</label>
+											<div class="col-sm-12">
+												<div class="tags-cloud">
+													<div class="tag">
+														<a href="#">무관</a>
+													</div>
+													<div class="tag">
+														<a href="#" class="active">남성</a>
+													</div>
+													<div class="tag">
+														<a href="#">여성</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="inputChannelType" class="col-sm-6 col-form-label">인플루언서 선호 유형</label>
+											<div class="col-sm-12">
+												<div class="tags-cloud">
+													<div class="tag">
+														<a href="#">VLOD</a>
+													</div>
+													<div class="tag">
+														<a href="#" class="active">리뷰</a>
+													</div>
+													<div class="tag">
+														<a href="#">게임</a>
+													</div>
+													<div class="tag">
+														<a href="#">여행</a>
+													</div>
+													<div class="tag">
+														<a href="#">운동</a>
+													</div>
+													<div class="tag">
+														<a href="#">먹방</a>
+													</div>
+													<div class="tag">
+														<a href="#">뷰티</a>
+													</div>
+													<div class="tag">
+														<a href="#">어린이</a>
+													</div>
+													<div class="tag">
+														<a href="#">IT</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="text-right pt-3 pr-3">
+											<a href="#" class="btn btn-gray btn-animated margin-clear">취소 <i class="fa fa-remove"></i></a>
+											<a href="#" class="btn btn-success btn-animated margin-clear">완료 <i class="fa fa-check"></i></a>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -414,7 +551,7 @@
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="footer-content">
-									<div class="logo-footer"><img id="logo-footer" src="../resource/images/logo_light_blue.png" alt=""></div>
+									<div class="logo-footer"><img id="logo-footer" src="../resource/../resource/images/logo_light_blue.png" alt=""></div>
 									<p>
 										Serviced by <strong>5 SECONDS STUDIO</strong>
 									</p>
@@ -468,9 +605,6 @@
 
 	<!-- JavaScript files placed at the end of the document so the pages load faster -->
 	<!-- ================================================== -->
-	<!-- Jquery and Bootstap core js files -->
-	<script src="../resource/plugins/jquery.min.js"></script>
-	<script src="../resource/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<!-- jQuery Revolution Slider  -->
 	<script src="../resource/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js"></script>
 	<script src="../resource/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js"></script>
@@ -493,6 +627,8 @@
 	<script src="../resource/js/template.js"></script>
 	<!-- Custom Scripts -->
 	<script src="../resource/js/custom.js"></script>
+	<!-- Datepicker -->
+	<script src="../resource/datepicker/js/bootstrap-datepicker.js"></script>
 
 	<script type="text/javascript" src="../resource/plugins/rs-plugin-5/js/extensions/revolution.extension.video.min.js"></script>
 	<script type="text/javascript" src="../resource/plugins/rs-plugin-5/js/extensions/revolution.extension.slideanims.min.js"></script>
