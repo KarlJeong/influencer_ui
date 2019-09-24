@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="../resource/../resource/images/favicon.ico">
+	<link rel="shortcut icon" href="../resource/images/favicon.ico">
 
 	<!-- Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -56,6 +56,22 @@
 	<script src="../resource/plugins/jquery.min.js"></script>
 	<script src="../resource/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+	<script>
+		let moveToSecondTab = function() {
+			$("#tabStep2").removeClass("disabled").trigger("click");
+			$('html').scrollTop(0);
+		};
+
+		let moveToLastTab = function() {
+			if (!$("#formStep2")[0].checkValidity()) {
+				$("#formStep2").find("#submiHidden2").click();
+			} else {
+				$("#tabStep3").removeClass("disabled").trigger("click");
+				$('html').scrollTop(0);
+			}
+		};
+	</script>
+
 	<div class="scrollToTop circle"><i class="fa fa-angle-up"></i></div>
 
 	<div class="page-wrapper">
@@ -66,7 +82,7 @@
 						<div class="col-md-auto hidden-md-down">
 							<div class="header-first clearfix">
 								<div id="logo" class="logo">
-									<a href="index.html"><img id="logo_img" src="../resource/../resource/images/logo_light_blue.png" alt="The Project"></a>
+									<a href="index.html"><img id="logo_img" src="../resource/images/logo_light_blue.png" alt="The Project"></a>
 								</div>
 
 								<div class="site-slogan">
@@ -81,7 +97,7 @@
 									<nav class="navbar navbar-expand-lg navbar-light p-0">
 										<div class="navbar-brand clearfix hidden-lg-up">
 											<div id="logo-mobile" class="logo">
-												<a href="index.html"><img id="logo-img-mobile" src="../resource/../resource/images/logo_light_blue.png" alt="The Project"></a>
+												<a href="index.html"><img id="logo-img-mobile" src="../resource/images/logo_light_blue.png" alt="The Project"></a>
 											</div>
 
 											<div class="site-slogan">
@@ -173,13 +189,13 @@
 					<!-- Nav tabs -->
 					<ul class="nav nav-pills" role="tablist">
 						<li class="nav-item">
-							<a class="nav-link active show" href="#productInfo" role="tab" data-toggle="tab" title="제품 정보입력" aria-selected="false">1단계</a>
+							<a class="nav-link active show" id="tabStep1" href="#productInfo" role="tab" data-toggle="tab" title="제품 정보입력" aria-selected="false">1단계</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#campaignInfo" role="tab" data-toggle="tab" title="캠페인 정보입력" aria-selected="true">2단계</a>
+							<a class="nav-link disabled" id="tabStep2" href="#campaignInfo" role="tab" data-toggle="tab" title="캠페인 정보입력" aria-selected="true">2단계</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#influencerInfo" role="tab" data-toggle="tab" title="지원 정보입력">3단계</a>
+							<a class="nav-link disabled" id="tabStep3" href="#influencerInfo" role="tab" data-toggle="tab" title="지원 정보입력">3단계</a>
 						</li>
 					</ul>
 					<!-- Tab panes -->
@@ -194,7 +210,7 @@
 											<div class="form-group">
 												<label for="inputMainPic" class="col-form-label">제품 메인사진</label>
 												<div class="overlay-container ">
-													<img src="../resource/../resource/images/portfolio-6.jpg" alt="">
+													<img src="../resource/images/portfolio-6.jpg" alt="">
 													<div class="overlay-to-top">
 														<div class="fileMainPicBtn">
 															<label for="myFileUp"><i class="fa fa-plus"></i> 사진 변경</label>
@@ -239,7 +255,8 @@
 									</div>
 								</aside>
 								<div class="col-lg-7 order-lg-2 ml-xl-auto">
-									<form>
+									<<form id="formStep1">
+										<input id="submitHidden1" type="submit" style="display: none" />
 										<div class="form-group">
 											<label for="inputProduct" class="col-sm-3 col-form-label">제품 명</label>
 											<div class="col-sm-12">
@@ -252,32 +269,31 @@
 										<div class="form-group">
 											<label for="inputBrand" class="col-sm-3 col-form-label">브랜드 명</label>
 											<div class="col-sm-12">
-												<input type="text" class="form-control" id="inputBrand" value="레오폴드" disabled>
+												<input type="text" class="form-control" id="inputBrand" value="레오폴드" readonly>
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="inputCategory" class="col-sm-3 col-form-label">제품 카테고리</label>
 											<div class="col-sm-12">
-												<input type="text" class="form-control" id="inputCategory" value="IT" disabled>
+												<input type="text" class="form-control" id="inputCategory" value="IT" readonly>
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="intpuShopUrl" class="col-sm-3 col-form-label">제품 상세페이지</label>
 											<div class="col-sm-12">
-												<input type="text" class="form-control" id="intpuShopUrl" value="http://cafe24.com/fiveseconds/F12I5S" disabled>
+												<input type="text" class="form-control" id="intpuShopUrl" value="http://cafe24.com/fiveseconds/F12I5S" readonly>
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="inputExpireProduct" class="col-sm-3 col-form-label">제품 판매 종료일</label>
 											<div class="col-sm-12">
-												<input type="text" class="form-control" id="inputExpireProduct" value="2019-12-30" disabled>
+												<input type="text" class="form-control" id="inputExpireProduct" value="2019-12-30" readonly>
 											</div>
 										</div>
 										<div class="text-right pt-3 pr-3">
 											<a href="#" class="btn btn-gray btn-animated margin-clear">취소 <i class="fa fa-remove"></i></a>
-											<a href="#" class="btn btn-success btn-animated margin-clear">다음(1/2) <i class="fa fa-arrow-right"></i></a>
-										</div>
-									</form>
+											<a href="javascript:void(0);" onclick="moveToSecondTab()" class="btn btn-success btn-animated margin-clear">다음(1/2) <i class="fa fa-arrow-right"></i></a> </div>
+										</form>
 								</div>
 							</div>
 						</div>
@@ -286,17 +302,18 @@
 							<div class="separator-2"></div>
 							<div class="row">
 								<div class="col-lg-7">
-									<form>
+									<form id="formStep2">
+										<input id="submiHidden2" type="submit" style="display: none" />
 										<div class="form-group">
 											<label for="inputProduct" class="col-sm-3 col-form-label">캠페인 제목</label>
 											<div class="col-sm-12">
-												<input type="text" class="form-control" id="inputBrand" placeholder="ex) 기계식 갈축 키보드를 홍보해주실 유튜버를 찾습니다.">
+												<input type="text" class="form-control" id="inputBrand" placeholder="ex) 기계식 갈축 키보드를 홍보해주실 유튜버를 찾습니다." required>
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="inputBrand" class="col-sm-3 col-form-label">캠페인 주관</label>
 											<div class="col-sm-12">
-												<input type="text" class="form-control" id="inputBrand" placeholder="ex) 5SECONDS.">
+												<input type="text" class="form-control" id="inputBrand" placeholder="ex) 5SECONDS." required>
 											</div>
 										</div>
 										<div class="form-group">
@@ -420,12 +437,12 @@
 										<div class="form-group">
 											<label for="intpuShopUrl" class="col-sm-3 col-form-label">캠페인 목표</label>
 											<div class="col-sm-12">
-												<textarea class="form-control" id="intpuShopUrl" rows="3"></textarea>
+												<textarea class="form-control" id="intpuShopUrl" rows="3" required></textarea>
 											</div>
 										</div>
 										<div class="text-right pt-3 pr-3">
 											<a href="#" class="btn btn-gray btn-animated margin-clear">취소 <i class="fa fa-remove"></i></a>
-											<a href="#" class="btn btn-success btn-animated margin-clear">다음(2/3) <i class="fa fa-arrow-right"></i></a>
+											<a href="javascript:void(0);" id="testBtn" onclick="moveToLastTab()" class="btn btn-success btn-animated margin-clear">다음(2/3) <i class="fa fa-arrow-right"></i></a>
 										</div>
 									</form>
 								</div>
@@ -436,7 +453,8 @@
 							<div class="separator-2"></div>
 							<div class="row">
 								<div class="col-lg-7">
-									<form>
+									<form id="formStep3">
+										<input id="submitHidden3" type="submit" style="display: none" />
 										<div class="form-group">
 											<label for="inputChannelType" class="col-sm-6 col-form-label">인플루언서 구독자수 제한</label>
 											<div class="col-sm-12">
@@ -551,7 +569,7 @@
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="footer-content">
-									<div class="logo-footer"><img id="logo-footer" src="../resource/../resource/images/logo_light_blue.png" alt=""></div>
+									<div class="logo-footer"><img id="logo-footer" src="../resource/images/logo_light_blue.png" alt=""></div>
 									<p>
 										Serviced by <strong>5 SECONDS STUDIO</strong>
 									</p>
