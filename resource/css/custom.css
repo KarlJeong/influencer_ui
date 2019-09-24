@@ -175,3 +175,21 @@
   left:0;
   right:0;
 }
+
+
+.comment-avatar{
+  position:relative;
+  width: 80px;
+  height: 80px;
+}
+
+.comment-avatar > img.rounded-circle {
+  position:absolute;
+  width: 75px;
+  height: 75px;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
