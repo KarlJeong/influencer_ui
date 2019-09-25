@@ -6833,15 +6833,15 @@ header .container-fluid .animated.main-navigation .dropdown-menu .show .dropdown
 }
 
 .social-links.animated-effect-1 li.instagram a:hover {
-  border-color: #517fa4;
+  border-color: #e95950;
 }
 
 .social-links:not(.animated-effect-1) li.instagram a:hover,
 .colored.social-links li.instagram a,
 .social-links.animated-effect-1 li.instagram a:after,
 .btn.instagram {
-  background-color: #517fa4;
-  border-color: #517fa4;
+  background-color: #e95950;
+  border-color: #e95950;
   color: #ffffff;
 }
 

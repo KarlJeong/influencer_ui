@@ -48,7 +48,7 @@
 
 	<!-- Datepicker css -->
 	<link href="resource/datepicker/css/datepicker3.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+	<link rel="stylesheet" type="text/css" href="http:////cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
 
 </head>
 
@@ -56,22 +56,6 @@
 	<!-- Jquery and Bootstap core js files -->
 	<script src="resource/plugins/jquery.min.js"></script>
 	<script src="resource/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-	<script>
-		let moveToSecondTab = function() {
-			$("#tabStep2").removeClass("disabled").trigger("click");
-			$('html').scrollTop(0);
-		};
-
-		let moveToLastTab = function() {
-			if (!$("#formStep2")[0].checkValidity()) {
-				$("#formStep2").find("#submiHidden2").click();
-			} else {
-				$("#tabStep3").removeClass("disabled").trigger("click");
-				$('html').scrollTop(0);
-			}
-		};
-	</script>
 
 	<div class="scrollToTop circle"><i class="fa fa-angle-up"></i></div>
 
@@ -182,7 +166,7 @@
 			<div class="container">
 				<div class="row justify-content-lg-start pv-30">
 					<div class="col-12">
-						<h1 class="page-title">내 캠페인 목록</h1>
+						<h1 class="page-title">(주)인플 프로필</h1>
 						<div class="separator-2"></div>
 					</div>
 				</div>
@@ -190,202 +174,152 @@
 		</section>
 
 		<section class="clearfix">
-			<div class="light-gray-bg section">
-				<div class="container-fluid">
-					<div class="sorting-filters text-center mb-20 d-flex justify-content-center">
-						<form class="form-inline">
-							<div class="form-group">
-								<label>캠페인 명</label>
-								<input type="text" class="form-control">
-							</div>
-							<div class="form-group ml-1">
-								<label>제품 명</label>
-								<input type="text" class="form-control">
-							</div>
-							<div class="form-group ml-1">
-								<label>공고 일정</label>
-								<div class="col-lg-12 pv-2">
-									<div class="input-group date">
-										<input type="text" class="form-control" id="noticeRange" name="noticeRange" onkeydown="return false" style="width:80%" />
-										<div class="input-group-addon">
-											<span class="input-group-text"><i class="fa fa-calendar"></i></span>
-										</div>
-									</div>
-									<script type="text/javascript">
-										$(function() {
-											$("#noticeRange").daterangepicker({
-												locale: {
-													format: 'YYYY-MM-DD'
-												}
-											});
-										});
-									</script>
-								</div>
-							</div>
-							<div class="form-group ml-1">
-								<label>캠페인 일정</label>
-								<div class="col-lg-12 pv-2">
-									<div class="input-group date">
-										<input type="text" class="form-control" id="campaignRange" name="campaignRange" onkeydown="return false" style="width:80%" />
-										<div class="input-group-addon">
-											<span class="input-group-text"><i class="fa fa-calendar"></i></span>
-										</div>
-									</div>
-									<script type="text/javascript">
-										$(function() {
-											$("#campaignRange").daterangepicker({
-												locale: {
-													format: 'YYYY-MM-DD'
-												}
-											});
-										});
-									</script>
-								</div>
-							</div>
-							<div class="form-group ml-1">
-								<label>상태</label>
-								<select class="form-control">
-									<option selected="selected">캠페인 진행중</option>
-									<option>캠페인 준비중</option>
-									<option>모집중</option>
-									<option>종료</option>
-								</select>
-							</div>
-							<div class="form-group ml-1">
-								<a href="#" class="btn btn-default">조회</a>
-							</div>
-						</form>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-xl-5">
+						<div class="productPreviewBox mb-20">
+							<img src="resource/images/agency-2-slide-1.jpg" alt="" class="productPreview">
+						</div>
+					</div>
+					<div class="col-lg-8 col-xl-7">
+						<h2 class="mt-4">(주)인플</h2>
+						<p><i class="fa fa-tags"></i> <span class="pl-3">뷰티, 사업자등록증 인증완료</span></p>
+						<blockquote>
+							<p class="lead">문화를 만드는 일은 (주)인플이 가장 잘하는 일입니다. (주)인플은 우리의 아름다운 문화를 전 세계인들에게 알리기 위해 가장 앞서 달리고 있습니다. 세계의 라이프스타일을 주도하는 한류의 중심에 (주)인플이 있습니다.</p>
+						</blockquote>
+						<ul class="social-links circle colored animated-effect-1">
+							<li class="homepage"><a href="https://www.cj.net/"><i class="fa fa-home"></i></a></li>
+							<li class="facebook"><a href="https://www.facebook.com/KoreanBros/"><i class="fa fa-facebook"></i></a></li>
+							<li class="instagram"><a href="https://www.instagram.com/KOREANBROS/"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+						<div class="separator-2"></div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="pv-30">
+		<section class="pv-30 clearfix">
 			<div class="container">
-				<div class="row">
-					<div class="main col-12">
-						<div class="row grid-space-10">
-							<div class="col-lg-4">
-								<div class="listing-item white-bg bordered mb-20">
-									<div class="overlay-container productPreviewBox" style="border: solid 1px #EAEAEA">
-										<img src="../resource/images/portfolio-6.jpg" alt="" class="productPreview">
-										<span class="badge badge-ready">캠페인 준비중</span>
-									</div>
-									<div class="body">
-										<h3><a href="#">다이슨 V10</a></h3>
-										<p>다이슨 V10 청소기 사용 리뷰어를 찾습니다.</a></p>
-										<div class="row ml-xl-auto">
-											<div class="col-lg-4">
-												<h5>예산</h5>
-												<p class="thumnailDesc"><i class="fa fa-krw"></i> 300,000</p>
-											</div>
-											<div class="col-lg-4">
-												<h5>채널 수</h5>
-												<p class="thumnailDesc"><i class="fa fa-tv"></i> 2 채널</p>
-											</div>
-											<div class="col-lg-4">
-												<h5>상태</h5>
-												<p class="thumnailDesc"><i class="fa fa-handshake-o"></i> 캠페인 준비중</p>
-											</div>
-										</div>
-										<div class="progress style-2">
-											<div class="progress-bar bg-success progress-bar-striped progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="2" style="width: 100%">
-												<span>100% 모집완료 (2 / 2)</span>
-											</div>
-										</div>
-									</div>
-								</div>
+				<div class="row justify-content-lg-start pv-30">
+					<div class="col-lg-10">
+						<h2 class="text-left"><strong>내 캠페인 목록</strong></h2>
+						<div class="separator-2"></div>
+					</div>
+				</div>
+				<div class="image-box style-3-b">
+					<div class="row">
+						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
+							<div class="overlay-container">
+								<img src="resource/images/portfolio-1.jpg" alt="">
+								<span class="badge badge-ready">캠페인 준비중</span>
 							</div>
-							<div class="col-lg-4">
-								<div class="listing-item white-bg bordered mb-20">
-									<div class="overlay-container productPreviewBox" style="border: solid 1px #EAEAEA">
-										<img src="../resource/images/product-2.jpg" alt="" class="productPreview">
-										<span class="badge badge-working">캠페인 진행중</span>
-									</div>
-									<div class="body">
-										<h3><a href="#">다이슨 V10</a></h3>
-										<p>다이슨 V10 청소기 사용 리뷰어를 찾습니다.</a></p>
-										<div class="row ml-xl-auto">
-											<div class="col-lg-4">
-												<h5>예산</h5>
-												<p class="thumnailDesc"><i class="fa fa-krw"></i> 300,000</p>
-											</div>
-											<div class="col-lg-4">
-												<h5>채널 수</h5>
-												<p class="thumnailDesc"><i class="fa fa-tv"></i> 1 채널</p>
-											</div>
-											<div class="col-lg-4">
-												<h5>상태</h5>
-												<p class="thumnailDesc"><i class="fa fa-handshake-o"></i> 캠페인 진행중</p>
-											</div>
-										</div>
-										<div class="progress style-2">
-											<div class="progress-bar bg-danger progress-bar-striped progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="1" style="width: 100%">
-												<span>100% 모집완료 (1 / 1)</span>
-											</div>
-										</div>
-									</div>
-								</div>
+						</div>
+						<div class="col-md-6 col-lg-8 col-xl-9">
+							<div class="body">
+								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
+								<p class="small mb-10">
+									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
+									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
+								</p>
+								<p class="small mb-10">
+									<i class="fa fa-krw pr-1"></i> 300,000
+									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
+								</p>
+								<div class="separator-2"></div>
+								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
 							</div>
-							<div class="col-lg-4">
-								<div class="listing-item white-bg bordered mb-20">
-									<div class="overlay-container productPreviewBox" style="border: solid 1px #EAEAEA">
-										<img src="../resource/images/product-3.jpg" alt="" class="productPreview">
-										<span class="badge badge-gathering">모집중</span>
-									</div>
-									<div class="body">
-										<h3><a href="#">다이슨 V10</a></h3>
-										<p>다이슨 V10 청소기 사용 리뷰어를 찾습니다.</a></p>
-										<div class="row ml-xl-auto">
-											<div class="col-lg-4">
-												<h5>예산</h5>
-												<p class="thumnailDesc"><i class="fa fa-krw"></i> 300,000</p>
-											</div>
-											<div class="col-lg-4">
-												<h5>채널 수</h5>
-												<p class="thumnailDesc"><i class="fa fa-tv"></i> 5 채널</p>
-											</div>
-											<div class="col-lg-4">
-												<h5>상태</h5>
-												<p class="thumnailDesc"><i class="fa fa-handshake-o"></i> 모집중</p>
-											</div>
-										</div>
-										<div class="progress style-2">
-											<div class="progress-bar bg-default progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
-												<span>40% 모집완료 (2 / 5)</span>
-											</div>
-										</div>
-									</div>
-								</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-box style-3-b">
+					<div class="row">
+						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
+							<div class="overlay-container">
+								<img src="resource/images/portfolio-2.jpg" alt="">
+								<span class="badge badge-working">캠페인 진행중</span>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-8 col-xl-9">
+							<div class="body">
+								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
+								<p class="small mb-10">
+									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
+									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
+								</p>
+								<p class="small mb-10">
+									<i class="fa fa-krw pr-1"></i> 300,000
+									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
+								</p>
+								<div class="separator-2"></div>
+								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-box style-3-b">
+					<div class="row">
+						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
+							<div class="overlay-container">
+								<img src="resource/images/portfolio-3.jpg" alt="">
+								<span class="badge badge-gathering">모집중</span>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-8 col-xl-9">
+							<div class="body">
+								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
+								<p class="small mb-10">
+									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
+									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
+								</p>
+								<p class="small mb-10">
+									<i class="fa fa-krw pr-1"></i> 300,000
+									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
+								</p>
+								<div class="separator-2"></div>
+								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="image-box style-3-b">
+					<div class="row">
+						<div class="col-md-6 col-lg-4 col-xl-3 listing-item">
+							<div class="overlay-container">
+								<img src="resource/images/portfolio-3.jpg" alt="">
+								<span class="badge badge-end">종료</span>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-8 col-xl-9">
+							<div class="body">
+								<h3 class="title"><a href="portfolio-item.html">캠페인 제목1</a></h3>
+								<p class="small mb-10">
+									<i class="fa fa-calendar-o pr-1"></i> 2019.09.23 ~ 2019.09.30
+									<i class="pl-10 pr-1 fa fa-tag"></i> 리뷰
+								</p>
+								<p class="small mb-10">
+									<i class="fa fa-krw pr-1"></i> 300,000
+									<i class="pl-10 pr-1 fa fa-users"></i> 2 / 2
+								</p>
+								<div class="separator-2"></div>
+								<p class="mb-10">단일 상품에 대한 리뷰 컨텐츠를 제작하고 광고기간 동안 게제. 주요 타겟은 10대, 20대이며 가성비가 좋다는 점을 강점으로 어필하고자 함.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-
-		<section class="pv-30">
-			<nav aria-label="Page navigation">
-				<ul class="pagination justify-content-center">
-					<li class="page-item">
-						<a class="page-link" href="#" aria-label="Previous">
-							<i aria-hidden="true" class="fa fa-angle-left"></i>
-							<span class="sr-only">Previous</span>
-						</a>
-					</li>
-					<li class="page-item active"><a class="page-link" href="#">1</a></li>
-					<li class="page-item"><a class="page-link" href="#">2</a></li>
-					<li class="page-item"><a class="page-link" href="#">3</a></li>
-					<li class="page-item"><a class="page-link" href="#">4</a></li>
-					<li class="page-item"><a class="page-link" href="#">5</a></li>
-					<li class="page-item">
-						<a class="page-link" href="#" aria-label="Next">
-							<i aria-hidden="true" class="fa fa-angle-right"></i>
-							<span class="sr-only">Next</span>
-						</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="container">
+				<div class="light-gray-bg section">
+					<div class="container-fluid">
+						<div class="sorting-filters text-center mb-20 d-flex justify-content-center">
+							<form class="form-inline">
+								<div class="form-group ml-1">
+									<a href="#" class="btn btn-default">조회</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<footer id="footer" class="clearfix ">
@@ -472,8 +406,8 @@
 	<!-- Custom Scripts -->
 	<script src="resource/js/custom.js"></script>
 	<!-- Daterangepicker -->
-	<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+	<script type="text/javascript" src="http:////cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<script type="text/javascript" src="http:////cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
 
 
 	<script type="text/javascript" src="resource/plugins/rs-plugin-5/js/extensions/revolution.extension.video.min.js"></script>

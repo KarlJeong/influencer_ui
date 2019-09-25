@@ -7,15 +7,28 @@
 }
 
 .social-links.animated-effect-1 li.youtube a:hover {
- border-color: #b31217;
+ border-color: #bb0000;
 }
 
 .social-links:not(.animated-effect-1) li.youtube a:hover,
 .colored.social-links li.youtube a,
 .social-links.animated-effect-1 li.youtube a:after,
 .btn.youtube {
- background-color: #b31217;
- border-color: #b31217;
+ background-color: #bb0000;
+ border-color: #bb0000;
+ color: #ffffff;
+}
+
+.social-links.animated-effect-1 li.homepage a:hover {
+ border-color: #00e461;
+}
+
+.social-links:not(.animated-effect-1) li.homepage a:hover,
+.colored.social-links li.homepage a,
+.social-links.animated-effect-1 li.homepage a:after,
+.btn.homepage {
+ background-color: #00e461;
+ border-color: #00e461;
  color: #ffffff;
 }
 
@@ -178,6 +191,7 @@
   height: 410px;
   background-color: #F6F6F6;
   border: solid 1px #EAEAEA;
+	position: relative;
 }
 
 .productPreview {
