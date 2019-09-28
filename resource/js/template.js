@@ -671,15 +671,15 @@
 					{
 						breakpoint: 1200,
 						settings: {
-							slidesToShow: 4,
-							slidesToScroll: 4
+							slidesToShow: 3,
+							slidesToScroll: 3
 						}
 					},
 					{
 						breakpoint: 992,
 						settings: {
-							slidesToShow: 4,
-							slidesToScroll: 4
+							slidesToShow: 2,
+							slidesToScroll: 2
 						}
 					},
 					{
@@ -692,8 +692,8 @@
 					{
 						breakpoint: 575,
 						settings: {
-							slidesToShow: 2,
-							slidesToScroll: 2
+							slidesToShow: 1,
+							slidesToScroll: 1
 						}
 					}
 				]
@@ -881,11 +881,13 @@
 					slidesToScroll: 1,
 					arrows: false,
 					fade: true,
+					draggable: false,
 					asNavFor: '.slick-carousel.content-slider-thumbs'
 				});
 				$('.slick-carousel.content-slider-thumbs').slick({
 					slidesToShow: 4,
 					slidesToScroll: 1,
+					draggable: false,
 					asNavFor: '.slick-carousel.content-slider-with-thumbs',
 					arrows: false,
 						focusOnSelect: true
@@ -896,12 +898,14 @@
 					slidesToScroll: 1,
 					arrows: false,
 					fade: true,
+					draggable: false,
 					asNavFor: '.slick-carousel.content-slider-thumbs',
 					rtl: true
 				});
 				$('.slick-carousel.content-slider-thumbs').slick({
 					slidesToShow: 4,
 					slidesToScroll: 1,
+					draggable: false,
 					asNavFor: '.slick-carousel.content-slider-with-thumbs',
 					arrows: false,
 					rtl: true,
